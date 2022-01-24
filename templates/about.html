@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+{% block content %}
+
+ <script type="text/javascript">
+     $(document).ready(function () {
+         init();
+     });
+
+     $(function () {
+
+     });
+
+     function init() {
+
+     }
+
+     function fnTab(param) {
+         var active = param;
+         $(".pf_inner").hide();
+         $("#" + active).show();
+     }
+ </script>
+
+ <!--side-->
+<div id="side">
+    <div class="side2">
+        01
+        <span class="s_line"></span>
+        PROFILE
+    </div>
+</div>
+<!--//side-->
+<!-- Container-->
+<div class="container">
+    <div class="cont profile">
+        <div class="porfile_name">
+                            <p>
+                                <a href="javascript:fnTab('145')">ABOUT</a>
+                            </p>
+                            <p>
+                                <a href="javascript:fnTab('146')">DESIGN</a>
+                            </p>
+                            <p>
+                                <a href="javascript:fnTab('147')">DEVELOPER</a>
+                            </p>
+                            <p>
+                                <a href="javascript:fnTab('148')">HOBBIES</a>
+                            </p>
+
+        </div>
+                        <div class="pf_inner" id="145">
+                            <div class="profile_img">
+                                <div class="color_bg artist_crbg"></div>
+                                <div class="artist_img"><img alt="GUADALUPE ROLDAN" width="455" height="580" src="/static/Content/Pc/images/about/about_01.jpg"></div>
+                            </div>
+                            <div class="profile_txt">
+                                <div class="name_tt">GUADALUPE</div>
+                                <div>
+                                    Country : Argentina<br>Birthday : 1991.11.29
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pf_inner" id="146" style="display:none;">
+                            <div class="profile_img">
+                                <div class="color_bg artist_crbg"></div>
+                                <div class="artist_img"><img alt="Diseño" width="455" height="580" src="/static/Content/Pc/images/about/about_02.jpg"></div>
+                            </div>
+                            <div class="profile_txt">
+                                <div class="name_tt">DESIGN</div>
+                                <div>
+                                    FROM : 2010<br>UNTIL : Present
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pf_inner" id="147" style="display:none;">
+                            <div class="profile_img">
+                                <div class="color_bg artist_crbg"></div>
+                                <div class="artist_img"><img alt="programacion" width="455" height="580" src="/static/Content/Pc/images/about/about_03.jpg"></div>
+                            </div>
+                            <div class="profile_txt">
+                                <div class="name_tt">DEVELOPER</div>
+                                <div>
+                                    FROM : 2021<br>UNTIL : Present
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pf_inner" id="148" style="display:none;">
+                            <div class="profile_img">
+                                <div class="color_bg artist_crbg"></div>
+                                <div class="artist_img"><img alt="Diseño" width="455" height="580" src="/static/Content/Pc/images/about/about_04.jpg"></div>
+                            </div>
+                            <div class="profile_txt">
+                                <div class="name_tt">HOBBIES</div>
+                                <div>
+                                    1.My Youtube channel <br> 2.League Of Legends<br> 3. Spinning <br> 4.Dance <br>
+                                    5. Grow vegetables <br> 6.Handywoman <br> 7.Learn something new
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    <!-- //cont notice -->
+</div>
+<!-- //Container -->
+
+{% endblock %}

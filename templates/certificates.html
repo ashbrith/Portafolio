@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            init();
+        });
+
+        $('#rowPrev').toggle();{
+        });
+    </script>
+
+<!--side-->
+<div id="side">
+    <div class="side2">
+        05
+        <span class="s_line"></span>
+        COURSES
+    </div>
+</div>
+<!--//side-->
+<!-- Container-->
+<div class="container">
+    <div class="cont notice wow fadeInUp" data-wow-delay="0.2s">
+        <div class="n_left">
+            <div class="title n_tt">COURSES</div>
+        </div>
+        <div class="n_right">
+            <div class="noticeList">
+              <form action="" method="post">
+                <ul>
+                  {% for course in courses %}
+                            <li>
+                                <a href="{{ course.3 }}" target='_blank'>
+                                    <p class="cate">{{ num }}</p>
+                                    <p class="nc_in">
+                                        <span class="tit">{{ course.1 }}</span>
+                                        <span class="date">{{ course.2 }}</span>
+                                    </p>
+                                </a>
+                            </li>
+                {% endfor %}
+                </ul>
+              </form>
+            </div>
+        </div>
+        <!-- //n_right -->
+        <!--page -->
+        <!--
+  <div class="page-btn-box nt_bt">
+            <div class="page-btn-box">
+<a href='/certificates/{{ prev }}/{{ page }}' class='img'><button type="button" class="prev-btn" data-page="0"><img src='/static/Content/Pc/images/common/bg-btn-prev.png' alt='prev' id='rowPrev'>prev</button></a>
+<span class='page-number'><strong>{{ show }}</strong> / <em>{{ page }}</em></span>
+<a href='/certificates/{{ next }}/{{ page }}' class='img'><button type="button" class="next-btn" data-page="2"><img src='/static/Content/Pc/images/common/bg-btn-next.png' alt='sig' id='rowNext'>sig</button></a>
+</div>
+        </div> -->
+        <!--//page-->
+    </div>
+    <!-- //cont course -->
+</div>
+<!-- //Container -->
+{% endblock %}

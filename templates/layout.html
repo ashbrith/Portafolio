@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>GR</title>
+<link rel="icon" href="/static/img/favicon.png">
+
+<meta content="width=1200" name="viewport" />
+<meta name="description">
+
+
+<meta property="og:url" content="thedeveloper.com.ar" />
+<meta property="og:title" content="Guadalupe Roldan" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/static/img/logo_ws.jpg" />
+<meta property="og:description" content="POTAFOLIO | Official Website">
+
+
+<link href="/static/Content/Pc/css/common.css" rel="stylesheet">
+<link href="/static/Content/Pc/css/ui.css" rel="stylesheet">
+<link href="/static/Content/Pc/css/common/animate.css" rel="stylesheet">
+<link href="/static/Content/Pc/css/common/magnific-popup.css" rel="stylesheet">
+<link href="/static/Content/Pc/css/modal/modal-video.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+<script src="/static/bundles/jquery"></script>
+<script src="/static/bundles/jqueryval"></script>
+<script src="/static/bundles/ui"></script>
+<script src="/static/bundles/modal_video_pc"></script>
+<script src="/static/bundles/common_pc"></script>
+<script src="/static/bundles/common_wow_pc"></script>
+
+
+    <style>
+        .artist_color {
+            color: #f27099 !important;
+        }
+        .artist_crbg{
+            background-color: #f27099 !important;
+        }
+    </style>
+</head>
+    <body>
+        <!-- Wrap -->
+        <div id="wrap">
+            <input id="PointColor" name="PointColor" type="hidden" value="#a4bde4" />
+
+    <!-- Header --><!--0828-->
+    <div id="header" class="main_hd">
+        <div class="ArtistLogo_txt main_logo">
+            <a href="/">
+                <img src="/static/Content/Pc/images/common/logo-bk.png" alt="Menu">
+            </a>
+        </div>
+        <button class="ham_menu" onclick="openNav()" type="button"><img src="/static/Content/Pc/images/common/menu-bk.png" alt="Menu"></button>
+    </div>
+    <!-- //Header -->
+    <!-- GNB -->
+    <nav id="mySidenav" class="gnb">
+        <div class="ArtistLogo_txt">
+            <a href="/">
+                <img src="/static/Content/Pc/images/common/logo-bk.png" alt="INICIO">
+            </a>
+        </div>
+        <button class="ham_menu_close" type="button" onclick="closeNav()"><img src="/static/Content/Pc/images/common/btn_siteMenu_close.png" alt="Cerrar"></button>
+        <ul class="gnb_list">
+                    <li>
+                        <a href="/profile">ABOUT ME</a>
+                    </li>
+                    <li>
+                        <a href="/portfolio">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="/certificates/1/1">CERTIFICATES</a>
+                    </li>
+                    <li>
+                        <a href="/skills">SKILLSET</a>
+                    </li>
+                    <li>
+                        <a href="/contact">CONTACT</a>
+                    </li>
+        </ul>
+        <!-- Footer -->
+        <p class="copyright">
+            Copyright ©
+            <span>Guadalupe Roldán</span>. All rights reserved.
+        </p>
+
+        <ul class="sns_menu">
+          <li>
+              <a href="https://www.linkedin.com/in/guadaluperoldan/" target="_blank"><img alt="linkedin" src="/static/Content/Pc/images/common/sns_linkedin_b.png"></a>
+          </li>
+          <li>
+              <a href="/contact"><img alt="CONTACT" src="/static/Content/Pc/images/common/contact_b.png"></a>
+          </li>
+
+          <li>
+              <a href="https://github.com/ashbrith" target="_blank"><img alt="GITHUB" src="/static/Content/Pc/images/common/sns_git_b.png"></a>
+          </li>
+        </ul>
+        <!-- //Footer -->
+    </nav>
+    <!-- //GNB -->
+
+        <style>
+            html, body {
+                font-family: 'Lato', sans-serif;
+                color: #1d1d1d;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .example-marquee {
+                position: relative;
+            }
+
+            .content {
+                display: table;
+                width: 100%;
+                min-height: 100vh;
+                z-index: 1;
+                position: relative;
+            }
+
+                .content .inner {
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+
+                    .content .inner h1 {
+                        font-size: 62px;
+                        color: white;
+                        text-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+                    }
+
+            .video-background-controls button {
+                font-size: 32px;
+                display: inline-block;
+                padding: 0px;
+                margin: 0px;
+                height: 32px;
+                width: 32px;
+                border-radius: 16px;
+                line-height: 32px;
+                border: none;
+                background: none;
+                -webkit-appearance: none;
+                color: white;
+                filter: drop-shadow(0px 0px 1px black);
+                cursor: pointer;
+                opacity: 1;
+                transition: all 250ms ease-in-out;
+                margin-left: 10px;
+            }
+
+                .video-background-controls button:hover {
+                    opacity: 0.5;
+                }
+
+            iframe {
+                transition: opacity 500ms ease-in-out;
+                transition-delay: 250ms;
+            }
+        </style>
+
+
+
+
+
+          {% block content %}
+          {% endblock %}
+          <!-- Footer -->
+          <div id="footer">
+              <p class="copyright">
+                  Copyright ©
+                  <span>Guadalupe Roldán</span>. All rights reserved.
+              </p>
+              <ul class="sns">
+                          <li>
+                              <a href="https://www.linkedin.com/in/guadaluperoldan/" target="_blank"><img alt="linkedin" src="/static/Content/Pc/images/common/sns_linkedin_b.png"></a>
+                          </li>
+                          <li>
+                              <a href="/contact"><img alt="CONTACT" src="/static/Content/Pc/images/common/contact_b.png"></a>
+                          </li>
+
+                          <li>
+                              <a href="https://github.com/ashbrith" target="_blank"><img alt="GITHUB" src="/static/Content/Pc/images/common/sns_git_b.png"></a>
+                          </li>
+              </ul>
+          </div>
+
+          <script>
+              new WOW().init();
+          </script>
+          <!-- //Footer -->
+
+              </div>
+              <!-- //Wrap -->
+          </body>
+        </html>

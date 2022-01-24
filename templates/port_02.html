@@ -1,0 +1,174 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            init();
+        });
+
+        function fnTab(param) {
+            var active = param;
+            $(".dis").hide();
+            $("#" + active).show();
+            $(".artist_color").attr('class', '');
+            $("#a_" + active).attr('class', 'artist_color');
+        }
+    </script>
+
+
+
+<!--side-->
+<div id="side">
+    <div class="side2">
+        02
+        <span class="s_line"></span>
+        PORTFOLIO
+    </div>
+</div>
+<!--//side-->
+<!-- Container-->
+<div class="container">
+    <div class="cont portfolio wow fadeInUp" data-wow-delay="0.2s">
+        <div class="dis_left">
+            <div class="dis_bt_top">
+                <p class="back">
+                    <a href="/portfolio">&lt;  BACK</a>
+                </p>
+            </div>
+                <div class="onlin_cover"><img alt="Memotes" src="/static/Content/Pc/images/sub/02.jpg"></div>
+                <div class="dis_bt_bottom">
+                    <p>Create Date</p>
+                    <p class="dis_date">2021-20-08</p>
+                </div>
+        </div>
+        <!-- //dis_left-->
+        <div class="dis_right">
+            <!-- portfolio_inner -->
+            <ul class="lang">
+                                    <li><a href="javascript:fnTab(773)" id="a_773">KO</a></li>
+                                    <li>/</li>
+                                    <li><a href="javascript:fnTab(772)" id="a_772">EN</a></li>
+                                    <li>/</li>
+                                    <li><a href="javascript:fnTab(771)" id="a_771" class="artist_color">ESP</a></li>
+            </ul>
+            <!--portfolio_inner-->
+            <div class="portfolio_inner">
+                    <div class="dis_txt_top">
+                        <p class="name">FULLSTACK</p>
+                        <p class="album_name EN">Memotest</p>
+                    </div>
+                              <div class="dis" id="773" style="display:none;">
+                                      <div class="dis_txt_tt">
+                                          texto aqui<br>en coreano <br>
+                                      </div>
+
+                                      <!--lista de recursos-->
+                                      <div class="tracklist">
+                                          <p class="tl_tt">RESOURCE LIST</p>
+                                          <div class="card-bare-text release-playlist text-tall">
+                                              1. HTML<br>2. CSS<br>3. JavaScript
+                                          </div>
+                                      </div>
+
+                                </div>
+                                <div class="dis" id="772" style="display:none;">
+                                        <div class="dis_txt_tt">
+                                            text here<br>in english <br>
+                                        </div>
+
+                                        <!--lista de recursos-->
+                                        <div class="tracklist">
+                                            <p class="tl_tt">RESOURCE LIST</p>
+                                            <div class="card-bare-text release-playlist text-tall">
+                                                1. HTML<br>2. CSS<br>3. JavaScript
+                                            </div>
+                                        </div>
+
+                                </div>
+                                <div class="dis" id="771">
+                                        <div class="dis_txt_tt">
+                                          texto<br>en español <br>
+                                        </div>
+
+                                        <!--lista de recursos-->
+                                        <div class="tracklist">
+                                            <p class="tl_tt">RESOURCE LIST</p>
+                                            <div class="card-bare-text release-playlist text-tall">
+                                                1. HTML<br>2. CSS<br>3. JavaScript
+                                            </div>
+                                        </div>
+
+                                </div>
+
+
+            </div>
+            <!--//portfolio_inner-->
+        </div>
+        <!-- //dis_right-->
+
+            <!--Demo-->
+            <div class="video">
+                <p class="vd_tt">DEMO</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gTKqGln8PPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!--release-->
+            <div class="release">
+                <div>
+                    <p class="rl_tt">PROJECTS</p>
+                    <p class="rl_more">
+                        <a href="/portfolio">MORE ></a>
+                    </p>
+                </div>
+
+                <div class="release_list">
+
+                        <div class="album_img" style="width:264px; height:264px;">
+                            <img alt="The Feels" src="/static/Content/Pc/images/sub/01.jpg" width="264" height="264" />
+                            <div class="album_cont">
+                                <div>
+                                    <p class="ab_date">2021-20-08</p>
+                                    <p class="ab_name">Reloj Digital</p>
+                                </div>
+                            </div>
+                            <a href="/01"></a>
+                        </div>
+                        <div class="album_img" style="width:264px; height:264px;">
+                            <img alt="Notificaciones" src="/static/Content/Pc/images/sub/03.jpg" width="264" height="264" />
+                            <div class="album_cont">
+                                <div>
+                                    <p class="ab_date">2021-06-09</p>
+                                    <p class="ab_name">Notificaciones por E-mail</p>
+                                </div>
+                            </div>
+                            <a href="/03"></a>
+                        </div>
+                        <div class="album_img" style="width:264px; height:264px;">
+                            <img alt="Conteo de recursos" src="/static/Content/Pc/images/sub/04.jpg" width="264" height="264" />
+                            <div class="album_cont">
+                                <div>
+                                    <p class="ab_date">2020-12-18</p>
+                                    <p class="ab_name">Conteo de recursos</p>
+                                </div>
+                            </div>
+                            <a href="/04"></a>
+                        </div>
+                        <div class="album_img" style="width:264px; height:264px;">
+                            <img alt="Trivia" src="/static/Content/Pc/images/sub/05.jpg" width="264" height="264" />
+                            <div class="album_cont">
+                                <div>
+                                    <p class="ab_date">2020-10-26</p>
+                                    <p class="ab_name">Trivia</p>
+                                </div>
+                            </div>
+                            <a href="/05"></a>
+                        </div>
+                </div>
+            </div>
+            <!-- // release -->
+    </div>
+</div>
+<!-- //Container -->
+
+
+{% endblock %}

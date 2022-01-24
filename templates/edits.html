@@ -1,0 +1,16 @@
+{% extends "panel.html" %}
+{% block content %}
+<div class="delete_course wrap_listas">
+  <form class="" action="/edit/{{ data.0 }}" method="post">
+                    <p class="nc_in">
+                        <span class="editbtn"><a href="/"><i class="fal fa-window-close icon"></i></a></span>
+                        <input type="text" name="" value="{{ data.1 }}" class="tit hide">
+                        <input type="text" name="" value="{{ data.2 }}" class="tit hide">
+                        <input type="text" name="" value="{{ data.3 }}" class="tit hide">
+
+                        <span class="editbtn btn_delete"><a href="/delete/{{ data.0 }}"> <i class="fas fa-trash icon btn_delete"></i></a></span>
+                        <span class="editbtn"><a href="/"><i class="far fa-save icon"></i></a></span>
+                    </p>
+  </form>
+</div>
+{% endblock %}

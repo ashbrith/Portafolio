@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Panel de control</title>
+    <link rel="icon" href="/static/img/favicon.png">
+    <link rel="stylesheet" href="/static/Content/Pc/css/style_panel.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/static/bundles/jquery"></script>
+    <script src="/static/bundles/jqueryval"></script>
+    <script src="/static/bundles/ui"></script>
+    <script src="/static/bundles/modal_video_pc"></script>
+    <script src="/static/bundles/common_pc"></script>
+    <script src="/static/bundles/common_wow_pc"></script>
+  </head>
+  <body>
+    <header>
+    <nav>
+      <div class="menu" id="menu">
+        <ul>
+          <li><a href="https://thedeveloper.com.ar"><img src="/static/img/logo.png" alt="Guadalupe Roldan" title="Inicio"></a></li>
+          <li><i class="far fa-chart-bar i1"></i><a href="" target="_blank"> Estadisticas</a></li>
+          <li><i class="far fa-comment-dots i1"></i><a href="" target="_blank"> Mensajes</a></li>
+          <li><i class="far fa-file-image i1 01"></i><a href="/proyectos" id="a_771" class=""> Proyectos</a></li>
+          <li><i class="fal fa-award i1 02"></i><a href="/certificado"> Certificaciones</a></li>
+          <li><i class="fal fa-sign-in i1"></i><a href="/salir"> Salir</a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+      {% block content %}
+      {% endblock %}
+  </body>
+</html>

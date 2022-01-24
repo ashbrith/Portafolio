@@ -1,0 +1,20 @@
+{% extends "panel.html" %}
+{% block content %}
+<link rel="stylesheet" href="/static/Content/Pc/css/certificado.css"/>
+<div class="title">Proyectos</div>
+<form class="wrap_certificado" action="index.html" method="post">
+    <label>Título del proyecto:</label>
+    <input type="text" name="" value="" id="titulo_proyecto">
+    <label>Explicación:</label>
+    <input type="text" name="" value="" id="issued">
+  <div class="upload login_btn">
+    <label>PORTADA:</label>
+    <button type="submit" name="button">Elegir</button>
+    <label>&nbsp; DETALLES:</label>
+    <button type="submit" name="button">Elegir</button>
+  </div>
+  <div class="login_btn">
+    <button type="submit" name="button">AGREGAR</button>
+  </div>
+</form>
+{% endblock %}

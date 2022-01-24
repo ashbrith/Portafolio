@@ -1,0 +1,80 @@
+{% extends "panel.html" %}
+{% block content %}
+  <!-- Alerts-->
+{% with messages= get_flashed_messages() %}
+{% if messages  %}
+{% for message in messages %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  {{message}}
+  <button type="button" class="btn-close icon" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+  <!-- End Alerts-->
+  <script type="text/javascript" scr="/static/bundles/delete.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            init();
+        });
+
+        function fnTab(param) {
+            var active = param;
+            $(".hide").hide();
+            $("#" + active).show();
+        }
+    </script>
+
+<div class="title">Certificaciones</div>
+
+<link rel="stylesheet" href="/static/Content/Pc/css/certificado.css"/>
+<div class="course">
+  <form action="/datos" class="wrap_certificado" method="POST" >
+    <div id="fecha">
+      <label>Fecha de expedición:</label>
+      <br>
+      <input type="date" name="Cer_issued" value="" id="issued" required>
+    </div>
+    <div class="course">
+      <label>Título del certificado:</label>
+      <input type="text" name="Cer_title" value="" id="titulo" required>
+    </div>
+    <div id="url">
+      <label>URL del archivo:</label>
+      <input type="text" name="Cer_link" value="" id="link" required>
+    </div>
+    <div class="login_btn">
+      <button type="submit" name="button" id="agregar">AGREGAR</button>
+    </div>
+  </form>
+
+  <div class="delete_course wrap_listas">
+          <ul>
+            {% for course in courses %}
+                      <li>
+                              <p class="nc_in">
+                                  <span class="date">Título:</span>
+                                  <span class="tit">{{ course.1 }}</span>
+                                  <input type="text" name="" value="{{ course.1 }}" class="tit hide">
+                                  <span class="date">Fecha:</span>
+                                  <span class="tit">{{ course.2 }}</span>
+                                  <input type="text" name="" value="{{ course.2 }}" class="tit hide">
+                                  <span class="date">link:</span>
+                                  <span class="tit">{{ course.3 }}</span>
+                                  <input type="text" name="" value="{{ course.3 }}" class="tit hide">
+
+
+                                  <span class="editbtn btn_delete"><a href="/delete/{{ course.0 }}"> <i class="fas fa-trash icon btn_delete"></i></a></span>
+                                  <span class="editbtn"><a href="javascript:script"><i class="fas fa-pen icon"></i></a></span>
+                              </p>
+                      </li>
+          {% endfor %}
+          </ul>
+              </div>
+      </div>
+
+
+
+{% endblock %}
